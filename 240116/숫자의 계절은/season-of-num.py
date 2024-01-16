@@ -1,4 +1,4 @@
-m = int(input())
+a = int(input())
 
 if a <= 2 or a == 12:
     print("Winter")
