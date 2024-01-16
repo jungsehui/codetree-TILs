@@ -1,11 +1,9 @@
-age1, s1 = input().split()
-age2, s2 = input().split()
+age1, gender1 = input().split()
+age2, gender2 = input().split()
 
-if int(age1) >= 19 or int(age2) >= 19:
-    if s1 == "M" or s2 == "M":
-        print("1")
-    else:
-        print("0")
-
+if age1 >= 19 and gender1 == 'M':
+    print("1")
+elif age2 >= 19 and gender2 == 'M':
+    print("1")
 else:
     print("0")
