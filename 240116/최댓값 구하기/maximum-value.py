@@ -1,3 +1,9 @@
-a, b, c = map(int, input().split())
+num_arr = list(map(int, input().split()))
 
-print(max(a, b, c))
+max = num_arr[0]
+
+for num in num_arr:
+    if num >= max:
+        max = num
+
+print(max)
