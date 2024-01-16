@@ -6,6 +6,6 @@ if a % 2 != 0:
         a /= 3
         print(int(a))
 
-else:
+elif a % 3 == 0:
     a /= 3
     print(int(a))
