@@ -5,4 +5,4 @@ lowest = min(arr)
 
 result = [num for num in arr if num == lowest]
 
-print(*result)
+print(*result[0])
