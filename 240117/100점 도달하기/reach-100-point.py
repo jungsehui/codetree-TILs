@@ -1,17 +1,18 @@
 n = int(input())
 
-if n >= 90:
-    for i in range(n, 100+1):
-        print("A")
-elif n >= 80:
-    for i in range(n, 100+1):
-        print("B")
-elif n >= 70:
-    for i in range(n, 100+1):
-        print("C")
-elif n >= 60:
-    for i in range(n, 100+1):
-        print("C")
-else:
-    for i in range(n, 100+1):
-        print("F")
+for i in range(100 - n):
+    if i >= 90:
+        print("A", end=' ')
+        i += 1
+    elif i >= 80:
+        print("B", end=' ')
+        i += 1
+    elif i >= 70:
+        print("C", end=' ')
+        i += 1
+    elif i >= 60:
+        print("D", end=' ')
+        i += 1
+    else:
+        print("F", end=' ')
+        i += 1
