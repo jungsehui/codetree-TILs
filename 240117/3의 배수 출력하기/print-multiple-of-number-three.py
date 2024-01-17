@@ -1,7 +1,9 @@
 n = int(input())
-i = 1
 a = 3
+i = 1
 
-while i <= n:
-    print(a * i, end=' ')
+
+while result <= n:
+    result = a * i
+    print(result, end=' ')
     i += 1
