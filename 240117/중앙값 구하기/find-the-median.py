@@ -1,4 +1,6 @@
-arr = list(map(int, input().split()))
+from typing import List, Any
+
+arr: list[int | Any] = list(map(int, input().split()))
 
 n = len(arr)
 
