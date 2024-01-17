@@ -1,13 +1,17 @@
 n = int(input())
 
 if n >= 90:
-    # for i in range(n, )
-    print("A")
+    for i in range(n, 100+1)
+        print("A")
 elif n >= 80:
-    print("B")
+    for i in range(n, 100+1)
+        print("B")
 elif n >= 70:
-    print("C")
+    for i in range(n, 100+1)
+        print("C")
 elif n >= 60:
-    print("C")
+    for i in range(n, 100+1)
+        print("C")
 else:
-    print("F")
+    for i in range(n, 100+1)
+        print("F")
