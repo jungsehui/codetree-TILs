@@ -7,3 +7,5 @@ while result < n:
     result = a * i
     print(result, end=' ')
     i += 1
+    if result >= n:
+        break
