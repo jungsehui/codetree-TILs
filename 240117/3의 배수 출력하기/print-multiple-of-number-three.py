@@ -1,11 +1,12 @@
 n = int(input())
-a = 3
-i = 1
-result = 0
+arr = list()
 
-while result < n:
-    result = a * i
-    print(result, end=' ')
-    i += 1
-    if result >= n:
-        break
+while n >= 1:
+    if n % 3 == 0:
+        arr.append(n)
+        n -= 1
+    else:
+        n -= 1
+
+arr.sort()
+print(*arr)
