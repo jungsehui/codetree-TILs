@@ -1,7 +1,7 @@
 n = int(input())
 i = n
 
-for _ in range(100 - n):
+for _ in range(100 - n -1):
 
     if i >= 90:
         print("A", end=' ')
@@ -18,6 +18,3 @@ for _ in range(100 - n):
     else:
         print("F", end=' ')
         i += 1
-    
-    if i == 100:
-        break
