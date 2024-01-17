@@ -1,6 +1,7 @@
 n = int(input())
 
-for i in range(100 - n):
+for _ in range(100 - n):
+    i = n
     if i >= 90:
         print("A", end=' ')
         i += 1
