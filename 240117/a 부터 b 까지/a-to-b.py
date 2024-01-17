@@ -1,6 +1,6 @@
 a, b = map(int, input().split())
 
-for _ in range(a, b):
+for _ in range(a, b+1):
     print(a, end=' ')
     if a % 2 != 0:
         a *= 2
