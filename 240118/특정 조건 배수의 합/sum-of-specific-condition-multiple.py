@@ -1,10 +1,9 @@
-a, b = map(int, input().split())
+arr = list(map(int, input().split()))
 sumV = 0
 
-a = min(a, b)
-b = max(a, b)
+arr.sort()
 
-for num in range(a, b+1):
+for num in range(arr[0], arr[1] + 1):
     if num % 5 == 0:
         sumV += num
 
