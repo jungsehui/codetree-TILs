@@ -1,5 +1,11 @@
-_list = list(map(int, input().split()))
+_list = list()
 cnt = 0
+
+
+for _ in range(5):
+    n = int(input())
+    _list.append(n)
+
 
 for num in _list:
     if num % 3 == 0:
