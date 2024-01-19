@@ -4,7 +4,7 @@ n = int(input())
 x = 0
 
 while True:
-    if n % 2 != 1:
+    if n % 2 == 0:
         n /= 2
         x += 1
     else:
