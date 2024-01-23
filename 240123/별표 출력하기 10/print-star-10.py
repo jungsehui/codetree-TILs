@@ -1,11 +1,11 @@
 n = int(input())
 
 for i in range(n * 2):
-    if i % 2 == 0:  # 짝수이면
-        for j in range(int(1 + (i / 2))):
+    if i % 2 == 0:  # 홀수 번째 줄
+        for j in range(1 + i // 2):
             print("*", end=" ")
         print()
-    else:
-        for k in range(int(n - (i - 1) / 2)):
+    else:  # 짝수 번째 줄
+        for k in range(n - (i // 2)):
             print("*", end=" ")
         print()
