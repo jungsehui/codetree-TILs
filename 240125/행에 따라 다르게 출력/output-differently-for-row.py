@@ -1,16 +1,13 @@
 n = int(input())
-cnt1 = 1
-cnt2 = 2
-end_number = 0
+cnt = 0
 
 for i in range(n):
     for j in range(n):
         if i % 2 == 0:
-            print(end_number + cnt1, end=" ")
-            end_number += cnt1
+            cnt += 1
         else:
-            print(end_number + cnt2, end=" ")
-            end_number += cnt2
+            cnt += 2
+        print(cnt, end=" ")
     print()
 
 # if i == 0:
