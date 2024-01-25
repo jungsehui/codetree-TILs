@@ -13,6 +13,6 @@ for j in range(1, 10):
         print(f"{k} * {j} = {k * j}", end="")
         if k != num_list[-1]:
             print(" / ", end="")
-        else:
-            continue
+        # else:
+        #     continue
     print()
