@@ -5,10 +5,10 @@ ec = 0
 c3 = 0
 
 for index, elem in enumerate(arr):
-    if index % 2 == 1:
+    if (index + 1) % 2 == 0:
         es += elem
         ec += 1
-    if index % 3 == 2:
+    if (index + 1) % 3 == 0:
         s3 += elem
         c3 += 1
 
