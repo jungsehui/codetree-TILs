@@ -1,11 +1,11 @@
-arr = []
+arr = list(map(int, input().split()))
+t_arr = []
 
-for _ in range(10):
-    n = int(input())
-    if n == 0:
+for i in arr:
+    if i == 0:
         break
-    arr.append(n)
+    t_arr.append(i)
 
-r_arr = arr[::-1]
+r_arr = t_arr[::-1]
 
 print(*r_arr)
