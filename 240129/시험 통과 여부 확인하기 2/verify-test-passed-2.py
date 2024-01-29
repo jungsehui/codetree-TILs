@@ -15,5 +15,8 @@ for _ in range(n):
 
     if avr >= 60:
         print("pass")
+        stu_cnt += 1
     else:
         print("fail")
+
+print(stu_cnt)
