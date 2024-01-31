@@ -5,6 +5,8 @@ cnt_arr = [0] * 10
 for elem in arr:
     if elem == 0:
         break
+    elif elem < 10:
+        continue
 
     index = elem // 10
     cnt_arr[index - 1] += 1
