@@ -19,7 +19,8 @@ for _ in range(p):
                 break
         if answer == -1:
             print(0)
-        print(answer)
+        else:
+            print(answer)
         pass
     elif prob_index == 3:
         num_list = list(map(str,num_list))
