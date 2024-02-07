@@ -18,3 +18,5 @@ for _ in range(p):
     else:
         for i in range(qst_inp_list[1], qst_inp_list[2] + 1):
             print(num_list[i - 1], end = " ")
+
+    print()
