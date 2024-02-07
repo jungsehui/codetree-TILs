@@ -12,6 +12,7 @@ for _ in range(p):
     if prob_index == 1:
         print(num_list[question-1])
     elif prob_index == 2:
+        print(f"{num_list[27]}")
         try:
             print(num_list.index(question)+1)
         except:
