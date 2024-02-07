@@ -12,10 +12,13 @@ for _ in range(p):
         print(num_list[question-1])
         pass
     elif prob_index == 2:
+        answer = -1
         for num_index,num in enumerate(num_list):
             if num == question:
                 answer = num_index+1
                 break
+        if answer == -1:
+            print(0)
         print(answer)
         pass
     elif prob_index == 3:
