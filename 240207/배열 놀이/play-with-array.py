@@ -12,7 +12,10 @@ for _ in range(p):
     if prob_index == 1:
         print(num_list[question-1])
     elif prob_index == 2:
-        print(num_list.index(question)+1)
+        try:
+            print(num_list.index(question)+1)
+        except:
+            print(0)
         # answer = -1
         # for num_index,num in enumerate(num_list):
         #     if num == question:
