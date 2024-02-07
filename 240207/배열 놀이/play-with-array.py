@@ -15,7 +15,6 @@ for _ in range(p):
                 print(idx + 1)
                 break
             else:
-                print(0)
 
     else:
         for i in range(qst_inp_list[1], qst_inp_list[2] + 1):
