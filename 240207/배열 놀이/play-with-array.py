@@ -26,5 +26,5 @@ for _ in range(p):
         # else:
         #     print(answer)
     elif prob_index == 3:
-        num_list = list(map(str,num_list))
-        print(' '.join(num_list[start_index-1:end_index]))
+        tmp_num_list = list(map(str,num_list))
+        print(' '.join(tmp_num_list[start_index-1:end_index]))
