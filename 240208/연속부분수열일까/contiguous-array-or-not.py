@@ -17,3 +17,5 @@ if cnt == len(n1_list):
     print("Yes")
 else:
     print("No")
+
+print(cnt)
