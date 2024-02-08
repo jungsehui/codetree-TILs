@@ -6,7 +6,6 @@ cnt = -1
 
 # 정렬 알고리즘 쓰듯이 문제 풀기 ?
 for i in range(len(n1_list)):
-    print(n1_list[i:])
     if n1_list[i:i + len(n2_list)] == n2_list:
         cnt = 1
 
