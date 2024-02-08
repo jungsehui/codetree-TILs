@@ -10,13 +10,10 @@ for i in range(n1):
         if i + j >= n1:
             break
 
-        if n1_list[i + j] == n2_list[j]:
+        elif n1_list[i + j] == n2_list[j]:
             cnt += 1
 
-    if cnt ==len(n1_list):
-        break
-
-if cnt == len(n1_list):
+if cnt >= len(n1_list):
     print("Yes")
 else:
     print("No")
