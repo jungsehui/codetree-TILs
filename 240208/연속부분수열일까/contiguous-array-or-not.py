@@ -13,6 +13,9 @@ for i in range(n1):
         if n1_list[i + j] == n2_list[j]:
             cnt += 1
 
+    if cnt ==len(n1_list):
+        break
+
 if cnt == len(n1_list):
     print("Yes")
 else:
