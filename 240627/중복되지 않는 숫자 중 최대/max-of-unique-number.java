@@ -22,11 +22,11 @@ public class Main {
             if (arr[j] > maxVal) {
                 maxVal = arr[j];
             }
-        }
 
-        for (int k = 0; k < N; k++) {
-            if (maxVal == arr[k]) {
-                count++;
+            for (int k = 0; k < N; k++) {
+                if (maxVal == arr[k]) {
+                    count++;
+                }
             }
         }
 
@@ -35,6 +35,5 @@ public class Main {
         } else {
             System.out.print(maxVal);
         }
-
     }
 }
