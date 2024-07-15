@@ -5,13 +5,13 @@ public class Main {
     public static final int MAX_N = 20;
 
     public static int n;
-    public static int[][] grid = new int[20][20];
+    public static int[][] grid = new int[MAX_N][MAX_N];
 
     public static int getNumOfGold(int rowS, int colS, int rowE, int colE) {
         int numOfGold = 0;
 
-        for (int row = rowS; row < rowE; row++) {
-            for (int col = colS; col < colE; col++) {
+        for (int row = rowS; row <= rowE; row++) {
+            for (int col = colS; col <= colE; col++) {
                 numOfGold += grid[row][col];
             }
         }
