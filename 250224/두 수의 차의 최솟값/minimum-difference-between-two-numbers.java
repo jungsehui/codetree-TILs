@@ -16,9 +16,9 @@ public class Main {
             numbers[i] = Integer.parseInt(st.nextToken());
         }
 
-        int min = numbers[0];
+        int min = numbers[1] - numbers[0];
 
-        for (int i = 1; i < N; i++) {
+        for (int i = 2; i < N; i++) {
             int next = numbers[i];
             int now = numbers[i - 1];
             if (next - now < min) {
