@@ -10,30 +10,23 @@ public class Main {
 
         int N = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
-        int[] prices = new int[N];
-        List<Integer> benefits = new ArrayList<>();
+        int[] numbers = new int[N];
 
         for (int i = 0; i < N; i++) {
-            prices[i] = Integer.parseInt(st.nextToken());
+            numbers[i] = Integer.parseInt(st.nextToken());
         }
 
-        for (int i = 0; i < N; i++) {
-            int standard = prices[i];
+        int min = numbers[0];
 
-            for (int j = i + 1; j < N; j++) {
-                int target = prices[j];
-                int interval = target - standard;
-                benefits.add(interval);
+        for (int i = 1; i < N; i++) {
+            int next = numbers[i];
+            int now = numbers[i - 1];
+            if (next - now < min) {
+                min = next - now;
             }
         }
 
-        if (benefits.isEmpty()) {
-            System.out.println(0);
-            return;
-        }
-
-        Collections.sort(benefits);
-        System.out.println(benefits.get(0));
+        System.out.println(min);
 
         bw.flush();
         bw.close();
