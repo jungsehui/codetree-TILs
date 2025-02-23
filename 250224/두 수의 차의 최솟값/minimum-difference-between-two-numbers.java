@@ -33,7 +33,6 @@ public class Main {
         }
 
         Collections.sort(benefits);
-        System.out.println(benefits);
         System.out.println(benefits.get(0));
 
         bw.flush();
