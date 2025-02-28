@@ -21,41 +21,39 @@ public class Main {
             }
         }
 
-        float rowAverage = 0.0f;
-        float colAverage = 0.0f;
-        float entAverage = 0.0f;
+        float rowSum;
+        float colSum;
+        float entSum = 0.0f;
 
 
         for (int i = 0; i < 2; i++) {
+            rowSum = 0.0f;
+            
             for (int j = 0; j < 4; j++) {
-                rowAverage += numbers[i][j];
-                entAverage += numbers[i][j];
+                rowSum += numbers[i][j];
+                entSum += numbers[i][j];
             }
-
-            rowAverage /= 4;
-            sb.append(rowAverage).append(" ");
-            rowAverage = 0.0f;
+            
+            sb.append(rowSum / 4).append(" ");
         }
-
+        
         sb.append(System.lineSeparator());
 
         for (int i = 0; i < 4; i++) {
+            colSum = 0.0f;
+            
             for (int j = 0; j < 2; j++) {
-                colAverage += numbers[j][i];
+                colSum += numbers[j][i];
             }
-
-            colAverage /= 2;
-            sb.append(colAverage).append(" ");
-            colAverage = 0.0f;
+            
+            sb.append(colSum / 2).append(" ");
         }
-
+        
         sb.append(System.lineSeparator());
 
-        entAverage /= 8;
-        sb.append(entAverage).append(" ");
+        sb.append(entSum / 8);
 
-        System.out.println(sb.toString());
-
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
