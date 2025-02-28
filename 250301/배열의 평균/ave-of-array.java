@@ -28,30 +28,30 @@ public class Main {
 
         for (int i = 0; i < 2; i++) {
             rowSum = 0.0f;
-            
+
             for (int j = 0; j < 4; j++) {
                 rowSum += numbers[i][j];
                 entSum += numbers[i][j];
             }
-            
-            sb.append(rowSum / 4).append(" ");
+
+            sb.append(String.format("%.1f", rowSum / 4)).append(" ");
         }
-        
+
         sb.append(System.lineSeparator());
 
         for (int i = 0; i < 4; i++) {
             colSum = 0.0f;
-            
+
             for (int j = 0; j < 2; j++) {
                 colSum += numbers[j][i];
             }
-            
-            sb.append(colSum / 2).append(" ");
+
+            sb.append(String.format("%.1f", colSum / 2)).append(" ");
         }
-        
+
         sb.append(System.lineSeparator());
 
-        sb.append(entSum / 8);
+        sb.append(String.format("%.1f", entSum / 8));
 
         bw.write(sb.toString());
         bw.flush();
