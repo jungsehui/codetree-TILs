@@ -12,19 +12,19 @@ public class Main {
         int[][] a = new int[3][3];
         int[][] b = new int[3][3];
 
-        for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < 3; i++) {
             st = new StringTokenizer(br.readLine());
 
-            for (int k = 0; k < 3; k++) {
-                a[j][k] = Integer.parseInt(st.nextToken());
+            for (int j = 0; j < 3; j++) {
+                a[i][j] = Integer.parseInt(st.nextToken());
             }
         }
         String line = br.readLine();
-        for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < 3; i++) {
             st = new StringTokenizer(br.readLine());
 
-            for (int k = 0; k < 3; k++) {
-                b[j][k] = Integer.parseInt(st.nextToken());
+            for (int j = 0; j < 3; j++) {
+                b[i][j] = Integer.parseInt(st.nextToken());
             }
         }
 
