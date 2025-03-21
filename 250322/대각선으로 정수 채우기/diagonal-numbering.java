@@ -32,12 +32,13 @@ public class Main {
         int[][] arr = new int[N][M];
         int num = 1;
 
-        for (int sum = 0; sum < N + M - 1; sum++) {
-            for (int row = 0; row < N; row++) {
-                int col = sum - row;
-                
-                if (col >= 0 && col < M) {
-                    arr[row][col] = num++;
+        for (int i = 0; i < N + M - 1; i++) {
+            for (int j = 0; j < N; j++) {
+                for (int k = 0; k < M; k++) {
+                    if (i == j + k) {
+                        arr[j][k] = num;
+                        num++;
+                    }
                 }
             }
         }
