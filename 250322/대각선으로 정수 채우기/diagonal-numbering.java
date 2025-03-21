@@ -35,6 +35,7 @@ public class Main {
         for (int sum = 0; sum < N + M - 1; sum++) {
             for (int row = 0; row < N; row++) {
                 int col = sum - row;
+                
                 if (col >= 0 && col < M) {
                     arr[row][col] = num++;
                 }
