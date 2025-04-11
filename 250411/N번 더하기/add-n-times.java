@@ -14,9 +14,10 @@ public class Main {
 
         for (int i = 0; i < N; i++) {
             A += N;
+            System.out.println(A);
         }
 
-        bw.write(String.valueOf(A));
+//        bw.write(String.valueOf(A));
         bw.flush();
         bw.close();
         br.close();
