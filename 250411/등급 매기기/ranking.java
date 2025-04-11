@@ -10,16 +10,24 @@ public class Main {
 
         st = new StringTokenizer(br.readLine());
         int a = Integer.parseInt(st.nextToken());
-
-        String s = switch (a) {
-            case 90 -> "A";
-            case 80 -> "B";
-            case 70 -> "C";
-            case 60 -> "D";
-            default -> "F";
-        };
         
-        bw.write(s);
+        switch (a) {
+            case 90:
+                System.out.println("A");
+                break;
+            case 80:
+                System.out.println("B");
+                break;
+            case 70:
+                System.out.println("C");
+                break;
+            case 60:
+                System.out.println("D");
+                break;
+            default:
+                System.out.println("F");
+        }
+
         bw.flush();
         bw.close();
         br.close();
