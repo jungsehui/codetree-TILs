@@ -10,18 +10,19 @@ public class Main {
 
         st = new StringTokenizer(br.readLine());
         int a = Integer.parseInt(st.nextToken());
-        
-        switch (a) {
-            case 90:
+
+        switch (a / 10) {
+            case 10:
+            case 9:
                 System.out.println("A");
                 break;
-            case 80:
+            case 8:
                 System.out.println("B");
                 break;
-            case 70:
+            case 7:
                 System.out.println("C");
                 break;
-            case 60:
+            case 6:
                 System.out.println("D");
                 break;
             default:
