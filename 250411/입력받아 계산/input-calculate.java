@@ -10,8 +10,8 @@ public class Main {
 
         int a = Integer.parseInt(br.readLine());
         a += 2;
-        
-        bw.write(a);
+
+        bw.write(String.valueOf(a));
         bw.flush();
         bw.close();
         br.close();
