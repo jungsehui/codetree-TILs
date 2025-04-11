@@ -17,7 +17,7 @@ public class Main {
 
         if (AM % 2 != 0 && AM % 3 == 0) {
             System.out.println("true");
-        } else if (AM % 5 == 0) {
+        } else if (AM % 2 == 0 && AM % 5 == 0) {
             System.out.println("true");
         } else {
             System.out.println("false");
