@@ -16,7 +16,7 @@ public class Main {
             l.add(Integer.parseInt(st.nextToken()));
         }
         for (int elem : l) {
-            System.out.print(elem * elem);
+            System.out.print((elem * elem) + " ");
         }
 
         bw.flush();
