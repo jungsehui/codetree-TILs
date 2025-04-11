@@ -8,7 +8,7 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
-        double a = Integer.parseInt(br.readLine());
+        double a = Double.parseDouble(br.readLine());
         System.out.printf("%.2f", a);
 
         bw.flush();
