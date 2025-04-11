@@ -14,7 +14,7 @@ public class Main {
 
         StringBuilder repeated = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            repeated.append(s);
+            repeated.append(s).append(System.lineSeparator());
         }
 
         bw.write(repeated.toString());
