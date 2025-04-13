@@ -12,18 +12,13 @@ public class Main {
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
 
-        System.out.println(A);
-        for (int i = A; i < B; i++) {
-            int num = i;
-            if (num % 2 != 0) {
-                num *= 2;
+        int target = A;
+        while (target <= B) {
+            System.out.print(target + " ");
+            if (target % 2 != 0) {
+                target *= 2;
             } else {
-                num += 3;
-            }
-            if (num <= B) {
-                System.out.println(num);
-            } else {
-                break;
+                target += 3;
             }
         }
 
