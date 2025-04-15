@@ -14,20 +14,21 @@ public class Main {
         int top = 0;
         int bottom = N - 1;
         int left = 0;
-        int right = N - 1;
-        int max = N * N;
-        int num = 1;
         
         while (left < N) {
-            for (int i = top; i <= bottom; i++) {
-                arr[i][left] = i + 1;
+            if (left < N) {
+                for (int i = top; i <= bottom; i++) {
+                    arr[i][left] = i + 1;
+                }
+                left++;
             }
-            left++;
-            
-            for (int i = bottom; i >= top; i--) {
-                arr[i][left] = N - i;
+
+            if (left < N) {
+                for (int i = bottom; i >= top; i--) {
+                    arr[i][left] = N - i;
+                }
+                left++;
             }
-            left++;
         }
 
         for (int[] ints : arr) {
