@@ -12,14 +12,8 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         int[][] arr = new int[N][N];
         for (int i = 0; i < N; i++) {
-            if (i % 2 == 0) {
-                for (int j = 0; j < N; j++) {
-                    arr[i][j] = j + 1;
-                }
-            } else {
-                for (int j = N; j > 0; j--) {
-                    arr[i][j - 1] = N - j + 1;
-                }
+            for (int j = 0; j < N; j++) {
+                arr[i][j] = (i % 2 == 0) ? j + 1 : N - j;
             }
         }
 
