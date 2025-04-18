@@ -11,9 +11,8 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
-        st = new StringTokenizer(br.readLine());
-        String s1 = st.nextToken();
-        String s2 = st.nextToken();
+        String s1 = br.readLine();
+        String s2 = br.readLine();
 
         System.out.println(s1.length() + s2.length());
 
