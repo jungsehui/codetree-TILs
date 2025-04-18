@@ -15,7 +15,7 @@ public class Main {
         String s1 = st.nextToken();
         String s2 = st.nextToken();
 
-        System.out.println(s1.length() + s2.length)());
+        System.out.println(s1.length() + s2.length));
 
         bw.flush();
         bw.close();
