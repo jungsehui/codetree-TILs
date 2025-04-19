@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st;
+
+        String[] s = new String[3];
+        for (int i = 0; i < 3; i++) {
+            s[i] = br.readLine();
+        }
+        Arrays.sort(s);
+
+        System.out.println(s[0].length() - s[2].length());
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+}
