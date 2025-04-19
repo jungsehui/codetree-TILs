@@ -14,7 +14,7 @@ public class Main {
         }
         Arrays.sort(s);
 
-        System.out.println(s[0].length() - s[2].length());
+        System.out.println(s[2].length() - s[0].length());
         bw.flush();
         bw.close();
         br.close();
