@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             s[i] = br.readLine();
         }
-        Arrays.sort(s, Comparator.comparing(String::length));
+        Arrays.sort(s, Comparator.comparingInt(String::length));
 
         System.out.println(s[0].length() - s[2].length());
         bw.flush();
