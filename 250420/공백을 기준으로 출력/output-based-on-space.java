@@ -15,7 +15,7 @@ public class Main {
             sb.append(s);
         }
 
-        bw.wrtie(sb.toString());
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
