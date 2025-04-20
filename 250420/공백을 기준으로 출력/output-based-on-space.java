@@ -10,9 +10,10 @@ public class Main {
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 2; i++) {
-            st = new StringTokenizer(br.readLine());
-            String s = st.nextToken();
-            sb.append(s);
+            String[] strings = br.readLine().split(" ");
+            for (String string : strings) {
+                sb.append(string);
+            }
         }
 
         bw.write(sb.toString());
