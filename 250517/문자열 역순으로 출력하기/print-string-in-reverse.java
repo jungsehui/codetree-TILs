@@ -16,9 +16,9 @@ public class Main {
         }
 
         for (int i = 0; i < 4; i++) {
-            System.out.println(strings.pop());
+            System.out.println(strings.pollLast());
         }
-        
+
         bw.flush();
         bw.close();
         br.close();
