@@ -27,8 +27,8 @@ public class Main {
             }
         }
 
-        System.out.println(count);
-        System.out.printf("%.2f", (d / N));
+        System.out.print(count + " ");
+        System.out.printf("%.2f", (d / count));
         br.close();
     }
 }
