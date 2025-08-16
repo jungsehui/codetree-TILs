@@ -16,7 +16,7 @@ public class Main {
         int N = Integer.parseInt(br.readLine());
 
         int len = text.length() - 1;
-        while (N-- > 0) {
+        while (N-- > 0 && len >= 0) {
             System.out.print(text.charAt(len));
             len--;
         }
