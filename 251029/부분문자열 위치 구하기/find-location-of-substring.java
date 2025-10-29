@@ -14,7 +14,7 @@ public class Main {
         int index = -1;
 
         for (int i = 0; i < input.length() - target.length(); i++) {
-            if (input.substring(i, i + target.length()).equals(target)) {
+            if (input.startsWith(target, i)) {
                 index = i;
             }
         }
