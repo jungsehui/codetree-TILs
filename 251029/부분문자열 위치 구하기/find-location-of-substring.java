@@ -13,7 +13,7 @@ public class Main {
 
         int index = -1;
 
-        for (int i = 0; i < input.length() - target.length(); i++) {
+        for (int i = 0; i <= input.length() - target.length(); i++) {
             if (input.startsWith(target, i)) {
                 index = i;
                 break;
