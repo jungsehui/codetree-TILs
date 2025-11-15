@@ -12,8 +12,8 @@ public class Main {
         System.out.println(line);
 
         for (int i = 0; i < line.length(); i++) {
-            String first = line.substring(1);
-            String second = line.substring(0, 1);
+            String first = line.substring(line.length() - 1);
+            String second = line.substring(0, line.length() - 1);
 
             line = first + second;
             System.out.println(line);
