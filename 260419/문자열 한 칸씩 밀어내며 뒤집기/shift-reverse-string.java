@@ -25,41 +25,36 @@ public class Main {
 
             if (req == 2) {
                 char last = text.charAt(text.length() - 1);
-                StringBuilder newText = new StringBuilder(last);
-                for (int j = 1; text.length() - 1; j++) {
-                    newText.append(text.charAt(1));
-                }
-                text = newText;
-
                 StringBuilder newText = new StringBuilder();
-                newText.append(last); // 맨 뒷글자를 가장 먼저 넣음
-                
-                // 처음부터 '맨 마지막 글자 직전'까지 순회하며 이어 붙임
+                newText.append(last);
+
                 for (int j = 0; j < text.length() - 1; j++) {
-                    newText.append(text.charAt(j)); // 고정된 1이 아닌 변수 j 사용
+                    newText.append(text.charAt(j));
                 }
                 text = newText;
             }
 
             if (req == 3) {
                 StringBuilder reversed = new StringBuilder();
-                for (int j = text.length() - 1; j >= 0 j--) {
+                for (int j = text.length() - 1; j >= 0; j--) {
                     reversed.append(text.charAt(j));
                 }
                 text = reversed;
 
-                int left = 0;
-                int right = text.length() - 1;
+                // int left = 0;
+                // int right = text.length() - 1;
 
-                while (left < right) {
-                    char temp = text.charAt(left);
-                    text.setCharAt(left, text.charAt(right));
-                    text.setCharAt(right, temp);
+                // while (left < right) {
+                //     char temp = text.charAt(left);
+                //     text.setCharAt(left, text.charAt(right));
+                //     text.setCharAt(right, temp);
 
-                    left++;
-                    right--;
-                }
+                //     left++;
+                //     right--;
+                // }
             }
+
+            bw.write(text.toString() + "\n");
         }
 
         bw.flush();
